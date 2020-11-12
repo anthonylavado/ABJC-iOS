@@ -3,20 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		FDEAE401255C17A0004E86A6 /* ABJCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAE400255C17A0004E86A6 /* ABJCApp.swift */; };
-		FDEAE403255C17A0004E86A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAE402255C17A0004E86A6 /* ContentView.swift */; };
 		FDEAE405255C17A3004E86A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAE404255C17A3004E86A6 /* Assets.xcassets */; };
 		FDEAE408255C17A3004E86A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAE407255C17A3004E86A6 /* Preview Assets.xcassets */; };
+		FDEAE433255C1D70004E86A6 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE432255C1D70004E86A6 /* URLImage */; };
+		FDEAE437255C1D78004E86A6 /* abjc-api in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE436255C1D78004E86A6 /* abjc-api */; };
+		FDEAE439255C1D78004E86A6 /* abjc-core in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE438255C1D78004E86A6 /* abjc-core */; };
+		FDEAE43B255C1D78004E86A6 /* abjc-ui in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE43A255C1D78004E86A6 /* abjc-ui */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDEAE3FD255C17A0004E86A6 /* ABJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAE400255C17A0004E86A6 /* ABJCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABJCApp.swift; sourceTree = "<group>"; };
-		FDEAE402255C17A0004E86A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDEAE404255C17A3004E86A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEAE407255C17A3004E86A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDEAE409255C17A3004E86A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +29,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEAE433255C1D70004E86A6 /* URLImage in Frameworks */,
+				FDEAE437255C1D78004E86A6 /* abjc-api in Frameworks */,
+				FDEAE43B255C1D78004E86A6 /* abjc-ui in Frameworks */,
+				FDEAE439255C1D78004E86A6 /* abjc-core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,7 @@
 			children = (
 				FDEAE3FF255C17A0004E86A6 /* ABJC */,
 				FDEAE3FE255C17A0004E86A6 /* Products */,
+				FDEAE435255C1D78004E86A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				FDEAE400255C17A0004E86A6 /* ABJCApp.swift */,
-				FDEAE402255C17A0004E86A6 /* ContentView.swift */,
 				FDEAE404255C17A3004E86A6 /* Assets.xcassets */,
 				FDEAE409255C17A3004E86A6 /* Info.plist */,
 				FDEAE406255C17A3004E86A6 /* Preview Content */,
@@ -67,6 +73,13 @@
 				FDEAE407255C17A3004E86A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDEAE435255C1D78004E86A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +98,12 @@
 			dependencies = (
 			);
 			name = ABJC;
+			packageProductDependencies = (
+				FDEAE432255C1D70004E86A6 /* URLImage */,
+				FDEAE436255C1D78004E86A6 /* abjc-api */,
+				FDEAE438255C1D78004E86A6 /* abjc-core */,
+				FDEAE43A255C1D78004E86A6 /* abjc-ui */,
+			);
 			productName = ABJC;
 			productReference = FDEAE3FD255C17A0004E86A6 /* ABJC.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +131,9 @@
 				Base,
 			);
 			mainGroup = FDEAE3F4255C17A0004E86A6;
+			packageReferences = (
+				FDEAE431255C1D70004E86A6 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = FDEAE3FE255C17A0004E86A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEAE403255C17A0004E86A6 /* ContentView.swift in Sources */,
 				FDEAE401255C17A0004E86A6 /* ABJCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahkamara.ABJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -302,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahkamara.ABJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -328,6 +349,37 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDEAE431255C1D70004E86A6 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDEAE432255C1D70004E86A6 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDEAE431255C1D70004E86A6 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		FDEAE436255C1D78004E86A6 /* abjc-api */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "abjc-api";
+		};
+		FDEAE438255C1D78004E86A6 /* abjc-core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "abjc-core";
+		};
+		FDEAE43A255C1D78004E86A6 /* abjc-ui */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "abjc-ui";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDEAE3F5255C17A0004E86A6 /* Project object */;
 }
