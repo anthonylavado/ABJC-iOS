@@ -12,6 +12,7 @@ import abjc_ui
 import abjc_api
 
 import URLImage
+import os
 
 @main
 struct ABJCApp: App {
@@ -24,7 +25,7 @@ struct ABJCApp: App {
     
     /// DesignConfiguration
     private var designConfig: DesignConfiguration {
-        var designConfig = DesignConfiguration(.ios)
+        let designConfig = DesignConfiguration(.ios)
         return designConfig
     }
     
@@ -41,7 +42,8 @@ struct ABJCApp: App {
             MainViewContainer()
                 .environmentObject(session)
                 .environmentObject(playerStore)
-                .environmentObject(designConfig)
+                .environment(\.designConfig, designConfig)
         }
     }
 }
+

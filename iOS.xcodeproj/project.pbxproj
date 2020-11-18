@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD002D6B2562CD7D00E80169 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD002D6D2562CD7D00E80169 /* Localizable.strings */; };
+		FD002D722562CDC400E80169 /* abjc-ui in Frameworks */ = {isa = PBXBuildFile; productRef = FD002D712562CDC400E80169 /* abjc-ui */; };
 		FDEAE401255C17A0004E86A6 /* ABJCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAE400255C17A0004E86A6 /* ABJCApp.swift */; };
 		FDEAE405255C17A3004E86A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAE404255C17A3004E86A6 /* Assets.xcassets */; };
 		FDEAE408255C17A3004E86A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAE407255C17A3004E86A6 /* Preview Assets.xcassets */; };
 		FDEAE433255C1D70004E86A6 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE432255C1D70004E86A6 /* URLImage */; };
 		FDEAE437255C1D78004E86A6 /* abjc-api in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE436255C1D78004E86A6 /* abjc-api */; };
 		FDEAE439255C1D78004E86A6 /* abjc-core in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE438255C1D78004E86A6 /* abjc-core */; };
-		FDEAE43B255C1D78004E86A6 /* abjc-ui in Frameworks */ = {isa = PBXBuildFile; productRef = FDEAE43A255C1D78004E86A6 /* abjc-ui */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD002D6C2562CD7D00E80169 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD002D6F2562CD8000E80169 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FDEAE3FD255C17A0004E86A6 /* ABJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAE400255C17A0004E86A6 /* ABJCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABJCApp.swift; sourceTree = "<group>"; };
 		FDEAE404255C17A3004E86A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,7 +34,7 @@
 			files = (
 				FDEAE433255C1D70004E86A6 /* URLImage in Frameworks */,
 				FDEAE437255C1D78004E86A6 /* abjc-api in Frameworks */,
-				FDEAE43B255C1D78004E86A6 /* abjc-ui in Frameworks */,
+				FD002D722562CDC400E80169 /* abjc-ui in Frameworks */,
 				FDEAE439255C1D78004E86A6 /* abjc-core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +62,7 @@
 		FDEAE3FF255C17A0004E86A6 /* ABJC */ = {
 			isa = PBXGroup;
 			children = (
+				FD002D6D2562CD7D00E80169 /* Localizable.strings */,
 				FDEAE400255C17A0004E86A6 /* ABJCApp.swift */,
 				FDEAE404255C17A3004E86A6 /* Assets.xcassets */,
 				FDEAE409255C17A3004E86A6 /* Info.plist */,
@@ -102,7 +106,7 @@
 				FDEAE432255C1D70004E86A6 /* URLImage */,
 				FDEAE436255C1D78004E86A6 /* abjc-api */,
 				FDEAE438255C1D78004E86A6 /* abjc-core */,
-				FDEAE43A255C1D78004E86A6 /* abjc-ui */,
+				FD002D712562CDC400E80169 /* abjc-ui */,
 			);
 			productName = ABJC;
 			productReference = FDEAE3FD255C17A0004E86A6 /* ABJC.app */;
@@ -129,6 +133,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = FDEAE3F4255C17A0004E86A6;
 			packageReferences = (
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDEAE408255C17A3004E86A6 /* Preview Assets.xcassets in Resources */,
+				FD002D6B2562CD7D00E80169 /* Localizable.strings in Resources */,
 				FDEAE405255C17A3004E86A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +171,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD002D6D2562CD7D00E80169 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD002D6C2562CD7D00E80169 /* en */,
+				FD002D6F2562CD8000E80169 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FDEAE40A255C17A3004E86A6 /* Debug */ = {
@@ -362,6 +380,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FD002D712562CDC400E80169 /* abjc-ui */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "abjc-ui";
+		};
 		FDEAE432255C1D70004E86A6 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FDEAE431255C1D70004E86A6 /* XCRemoteSwiftPackageReference "url-image" */;
@@ -374,10 +396,6 @@
 		FDEAE438255C1D78004E86A6 /* abjc-core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "abjc-core";
-		};
-		FDEAE43A255C1D78004E86A6 /* abjc-ui */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "abjc-ui";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
